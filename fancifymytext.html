@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+		<script src="fancyifmytext.js"></script>
+
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+
+		<!-- Your UI controls go here -->
+		<fieldset id="Text">
+			<legend>Text</legend>
+			<textarea 
+				id="TextArea" 
+				rows="4" 
+				cols="30">
+			</textarea> 
+		</fieldset>
+
+		<br>
+
+		<fieldset id="Fancify">
+			<legend>Fancify</legend>
+
+			<button 
+				onclick="biggerText()"
+				>Bigger!
+			</button>
+
+			<br>
+
+			<button
+				onclick="splitAndJoin()"	
+				>Moo
+			</button>
+
+			<br>
+
+			<input 
+				name="grp1" 
+				type="radio" 
+				id="FancySchmancy"
+				onchange="changeText()"
+				>FancySchmancy
+			</input>
+
+			<br>
+
+			<input 
+				name="grp1" 
+				type="radio" 
+				id="BoringBetty" 
+				onchange="changeText()"
+				>BoringBetty
+			</input>
+
+		</fieldset>
+
+	</body>
+</html>
